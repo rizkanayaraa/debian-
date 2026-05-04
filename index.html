@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Laporan Cloud Computing | Rizka Nayara</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      fontFamily: {
+        poppins: ['Poppins', 'sans-serif'],
+      }
+    }
+  }
+}
+</script>
+
+</head>
+
+<body class="bg-pink-50 text-gray-800 font-poppins">
+
+<!-- HEADER -->
+<header class="text-center py-20 px-6">
+  <h1 class="text-4xl md:text-5xl font-bold text-pink-500">
+     ˚ 𐙚.⋆ Laporan Praktikum ⋆.𐙚 ˚
+  </h1>
+  <h1 class="text-3xl md:text-4xl font-semibold text-pink-400 mt-2">
+    Cloud Computing
+  </h1>
+  <h1 class="text-lg text-gray-600 mt-2">
+    Rizka Nayara | 211011401190 | 04TPLP010
+  </h1>
+
+  <p class="max-w-xl mx-auto mt-6 text-gray-500">
+    Cloud Computing adalah teknologi yang memungkinkan pengguna untuk mengakses server, penyimpanan,
+    dan aplikasi melalui internet tanpa perlu memiliki perangkat fisik sendiri.
+  </p>
+</header>
+
+<!-- CONTAINER -->
+<div class="max-w-4xl mx-auto px-6 space-y-10 pb-20">
+
+  <!-- PERTEMUAN 1 -->
+  <div class="bg-white border border-pink-200 rounded-3xl p-8 shadow-md">
+    <span class="px-4 py-1 text-sm rounded-full bg-pink-400 text-white">Pertemuan 1</span>
+    <h2 class="text-2xl font-semibold mt-4 mb-3 text-pink-500">Instalasi Debian</h2>
+
+    <p class="text-gray-600 mb-4">
+      Pada pertemuan ini dilakukan instalasi sistem operasi Debian sebagai dasar dalam membangun server.
+      Debian dipilih karena memiliki tingkat stabilitas yang tinggi dan banyak digunakan dalam lingkungan server
+      maupun cloud computing. Proses instalasi dilakukan melalui virtual machine agar dapat mensimulasikan
+      penggunaan server secara nyata tanpa membutuhkan perangkat fisik tambahan.
+    </p>
+
+    <ul class="list-disc pl-5 space-y-2 text-gray-600">
+      <li>Menyiapkan file ISO Debian</li>
+      <li>Membuat Virtual Machine</li>
+      <li>Booting dan instalasi sistem</li>
+      <li>Konfigurasi hostname</li>
+      <li>Membuat user</li>
+      <li>Instalasi sistem dasar</li>
+    </ul>
+  </div>
+
+  <!-- PERTEMUAN 2 -->
+  <div class="bg-white border border-pink-200 rounded-3xl p-8 shadow-md">
+    <span class="px-4 py-1 text-sm rounded-full bg-pink-400 text-white">Pertemuan 2</span>
+    <h2 class="text-2xl font-semibold mt-4 mb-3 text-pink-500">Konfigurasi IP Address</h2>
+
+    <p class="text-gray-600 mb-4">
+      Pada tahap ini dilakukan konfigurasi IP Address untuk memberikan alamat tetap (static IP) pada server.
+      Hal ini penting agar server dapat diakses secara konsisten dalam jaringan. Dengan menggunakan IP statis,
+      server tidak akan berubah alamatnya sehingga memudahkan proses pengelolaan dan koneksi antar perangkat.
+    </p>
+
+    <ul class="list-disc pl-5 space-y-2 text-gray-600">
+      <li>Cek interface (ip a)</li>
+      <li>Edit file network</li>
+      <li>Set IP Address</li>
+      <li>Restart networking</li>
+      <li>Test koneksi</li>
+    </ul>
+  </div>
+
+  <!-- PERTEMUAN 3 -->
+  <div class="bg-white border border-pink-200 rounded-3xl p-8 shadow-md">
+    <span class="px-4 py-1 text-sm rounded-full bg-pink-400 text-white">Pertemuan 3</span>
+    <h2 class="text-2xl font-semibold mt-4 mb-3 text-pink-500">DNS Server</h2>
+
+    <p class="text-gray-600 mb-4">
+      Pada pertemuan ini dilakukan konfigurasi DNS Server yang berfungsi untuk menerjemahkan nama domain
+      menjadi alamat IP. Dengan adanya DNS, pengguna tidak perlu mengingat alamat IP server,
+      cukup menggunakan nama domain yang lebih mudah diingat. DNS server sangat penting dalam
+      infrastruktur jaringan dan cloud computing.
+    </p>
+
+    <ul class="list-disc pl-5 space-y-2 text-gray-600">
+      <li>Install bind9</li>
+      <li>Konfigurasi file named.conf</li>
+      <li>Membuat zone domain</li>
+      <li>Setting forward & reverse DNS</li>
+      <li>Restart service DNS</li>
+    </ul>
+  </div>
+  <!-- PERTEMUAN 4 -->
+  <div class="bg-white border border-pink-200 rounded-3xl p-8 shadow-md">
+    <span class="px-4 py-1 text-sm rounded-full bg-pink-400 text-white">Pertemuan 4</span>
+    <h2 class="text-2xl font-semibold mt-4 mb-3 text-pink-500">Konfigurasi Web Server</h2>
+
+    <p class="text-gray-600 mb-4">
+      Pada tahap ini dilakukan konfigurasi web server menggunakan Apache. Web server berfungsi
+      untuk menampilkan website agar dapat diakses melalui browser. Setelah Apache terinstal,
+      dilakukan pengujian dengan mengakses alamat IP server dan melakukan deploy file HTML
+      sebagai halaman website.
+    </p>
+
+    <ul class="list-disc pl-5 space-y-2 text-gray-600">
+      <li>Install apache2</li>
+      <li>Cek status server</li>
+      <li>Akses melalui browser</li>
+      <li>Edit file HTML</li>
+      <li>Deploy website</li>
+    </ul>
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer class="text-center py-10 text-gray-400 border-t border-pink-200">
+  © 2026 - Laporan Praktikum Cloud Computing 
+</footer>
+
+</body>
+</html>
